@@ -4,7 +4,16 @@
 Write your W1 activity Devlog here.
 
 ### W2
-Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+1. Why are the r, g, and b variables floats instead of ints, bools, or strings?
+    The rgb values needed to store numbers with decimals that can be used with operators,
+    which the other datatypes cannot do.
+    
+2. Why is the _bounce variable an int instead of a float, bool, or string?
+    Integers contain whole numbers, which _bounce is, so here is no need for decimals.
+    Booleans and strings cannot hold operatable numbers.
+
+The error you got after Step 4 of Part 2 told you something useful about why that line of code was broken- what was it?
+    Always put a semi-colon at the end of your line!!!!
 
 ## Open-Source Assets
 ### W1
