@@ -12,7 +12,7 @@ Write your W1 activity Devlog here.
     Integers contain whole numbers, which _bounce is, so here is no need for decimals.
     Booleans and strings cannot hold operatable numbers.
 
-The error you got after Step 4 of Part 2 told you something useful about why that line of code was broken- what was it?
+3. The error you got after Step 4 of Part 2 told you something useful about why that line of code was broken- what was it?
     Always put a semi-colon at the end of your line!!!!
 
 ## Open-Source Assets
