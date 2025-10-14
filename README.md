@@ -17,7 +17,7 @@ Write your W1 activity Devlog here.
 
 
 ### W3
-
+Table# 15
 private int brightness;
 
 void SetLightDimness(int sanity)
