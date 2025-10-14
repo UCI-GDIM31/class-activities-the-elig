@@ -17,8 +17,12 @@ Write your W1 activity Devlog here.
 
 
 ### W3
+
+private int brightness;
+
 void SetLightDimness(int sanity)
 {
+    brightness = sanity; //or something, we didn't have to do the body
 }
 
 ## Open-Source Assets
