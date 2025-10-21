@@ -25,11 +25,12 @@ void SetLightDimness(int sanity)
 }
 
 ### W4
-Line 17 is creating a new boolean member variable (that is inaccessible in the inspector) called `_isGrounded` which is initialized to true.
+1. Line 17 is creating a new boolean member variable (that is inaccessible in the inspector) called `_isGrounded` which is initialized to true.
+   Line 28 is an if statement checking (using the `GetKeyDown` method of the `Input`) class if Space is pressed AND `_isGrounded` is true.
+   Line 32 reassigns `_isGrounded` to false after the logic within the if statement is completed to prevent double jumping. 
 
-Line 28 is an if statement checking (using the `GetKeyDown` method of the `Input`) class if Space is pressed AND `_isGrounded` is true.
-
-Line 32 reassigns `_isGrounded` to false after the logic within the if statement is completed to prevent double jumping. 
+2a. We added Rigidbodies to the SoccerBall and the Cat since they both needed to physically collide and interact with other objects (each other and the floor/walls). We checked the In Trigger on the Goal since it didn't have any physical interaction.
+ b. I totally mixed up Y/Z Rotation and Y/Z Position. I had to figure out what went wrong with my movement, and I figured it was something in the constraints menu. Additionally, one of my code lines I forgot to put into a method/class, so I had to locate that and put it into the correct method (`MadeGoal`)
 
 
 ## Open-Source Assets
