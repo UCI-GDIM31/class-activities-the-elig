@@ -3,6 +3,11 @@
 ### W1
 Write your W1 activity Devlog here.
 
+## Open-Source Assets
+### W1
+- Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
+- Low-poly environment: https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153 
+
 ### W2
 1. Why are the r, g, and b variables floats instead of ints, bools, or strings?
     The rgb values needed to store numbers with decimals that can be used with operators,
@@ -25,7 +30,9 @@ void SetLightDimness(int sanity)
     brightness = sanity; //or something, we didn't have to do the body
 }
 
-## Open-Source Assets
-### W1
-- Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
-- Low-poly environment: https://assetstore.unity.com/packages/3d/environments/landscapes/low-poly-simple-nature-pack-162153 
+### W4
+Line 17 is creating a new boolean member variable (that is inaccessible in the inspector) called `_isGrounded` which is initialized to true.
+
+Line 28 is an if statement checking (using the `GetKeyDown` method of the `Input`) class if Space is pressed AND `_isGrounded` is true.
+
+Line 32 reassigns `_isGrounded` to false after the logic within the if statement is completed to prevent double jumping. 
