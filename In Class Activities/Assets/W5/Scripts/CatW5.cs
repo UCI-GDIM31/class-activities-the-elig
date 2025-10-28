@@ -12,7 +12,7 @@ public class CatW5 : MonoBehaviour
     private void Update()
     {
         // STEP 1 & 2 ---------------------------------------------------------
-        // STEP 1
+        // STEP 1  
         // This CatW5 class is a Component on the Cat GameObject. It controls
         //      the cat's movement.
         //
@@ -43,8 +43,14 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+        float translation = Input.GetAxis("Vertical") * _moveSpeed * Time.deltaTime;
+        if (_flipWSControls)
+            translation *= -1;
+
+        transform.Translate(0, 0, translation);
+
         
+
 
 
         // STEP 1 & 2 ---------------------------------------------------------
@@ -52,7 +58,7 @@ public class CatW5 : MonoBehaviour
         float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;
         transform.Rotate(0, rotation, 0);
 
-        if (translation.magnitude != 0.0f || rotation != 0.0f)
+        if (translation != 0.0f || rotation != 0.0f)
         {
             _animator.SetBool(_isWalkingName, true);
         }

@@ -8,16 +8,15 @@ using UnityEngine.AI;
 
 public class DeerW5 : MonoBehaviour
 {
-    [SerializeField] private Transform _target;
+    //creating a reference of the brown mushroom object for our own use in this class
+    [SerializeField] private Transform _target; //defined in inspector
 
 
-
-    //methods: set target, move to target
     void Start()
     {
         NavMeshAgent navigator = GetComponent<NavMeshAgent>();
 
-        navigator.SetDestination(_target.position);
+        navigator.SetDestination(_target.position); 
     }
 
     
