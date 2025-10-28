@@ -39,6 +39,8 @@ void SetLightDimness(int sanity)
 Question: What exactly does the gameObject method do? 
 Answer: The gameObject method is used to grab the GameObject that the component is in. 
 
+Create a `Transform` object that will be assigned with the inspector to another (already created) object (brown mushroom). Assign the destination to the `NavMeshAgent` through the `SetDestination()` method (where we input our target's `target.position`) 
+
 
 
 ## Open-Source Assets
