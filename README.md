@@ -2,6 +2,7 @@
 ### W1
 Hello World!!
 
+
 ### W2
 1. Why are the r, g, and b variables floats instead of ints, bools, or strings?
     The rgb values needed to store numbers with decimals that can be used with operators,
@@ -24,6 +25,7 @@ void SetLightDimness(int sanity)
     brightness = sanity; //or something, we didn't have to do the body
 }
 
+
 ### W4
 1. Line 17 is creating a new boolean member variable (that is inaccessible in the inspector) called `_isGrounded` which is initialized to true.
    Line 28 is an if statement checking (using the `GetKeyDown` method of the `Input`) class if Space is pressed AND `_isGrounded` is true.
@@ -31,6 +33,12 @@ void SetLightDimness(int sanity)
 
 2a. We added Rigidbodies to the SoccerBall and the Cat since they both needed to physically collide and interact with other objects (each other and the floor/walls). We checked the In Trigger on the Goal since it didn't have any physical interaction.
  b. I totally mixed up Y/Z Rotation and Y/Z Position. I had to figure out what went wrong with my movement, and I figured it was something in the constraints menu. Additionally, one of my code lines I forgot to put into a method/class, so I had to locate that and put it into the correct method (`MadeGoal`)
+
+ 
+### W5
+Question: What exactly does the gameObject method do? 
+Answer: The gameObject method is used to grab the GameObject that the component is in. 
+
 
 
 ## Open-Source Assets
