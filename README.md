@@ -42,6 +42,10 @@ Answer: The gameObject method is used to grab the GameObject that the component 
 Create a `Transform` object that will be assigned with the inspector to another (already created) object (brown mushroom). Assign the destination to the `NavMeshAgent` through the `SetDestination()` method (where we input our target's `target.position`) 
 
 
+### W6
+[Unity Cheat Sheet](https://docs.google.com/document/d/12El8B1DVwCrcYU4DHfi3xilsWEET20KrlgRqnEkWHi4/edit?tab=t.0)
+
+
 
 ## Open-Source Assets
 ### W1
