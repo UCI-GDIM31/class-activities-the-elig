@@ -46,6 +46,10 @@ Create a `Transform` object that will be assigned with the inspector to another 
 [Unity Cheat Sheet](https://docs.google.com/document/d/12El8B1DVwCrcYU4DHfi3xilsWEET20KrlgRqnEkWHi4/edit?tab=t.0)
 
 
+### W7
+
+
+
 
 ## Open-Source Assets
 ### W1
