@@ -47,7 +47,9 @@ Create a `Transform` object that will be assigned with the inspector to another 
 
 
 ### W7
+1. In the [Game Design](https://docs.google.com/document/d/12El8B1DVwCrcYU4DHfi3xilsWEET20KrlgRqnEkWHi4/edit?tab=t.n15fr0ty9u79#heading=h.q4s6t27voqk3) assignment, I did physics.
 
+2. In the original code in Step 2, the direction you move ignores the direction your facing, and instead always follows the "forward" and "backwards" of the global axis. 
 
 
 
